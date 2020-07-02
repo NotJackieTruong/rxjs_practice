@@ -8,7 +8,7 @@ var formOutput = document.querySelector('div[class="form-output"]')
 var output = document.querySelector('p[class="output"]')
 
 const data = Rx.Observable.create(observer => {
-  fetch('https://api.github.com/users')
+  fetch('https://api.github.com/users?per_page=5')
   .then(res=> res.json())
   .then(data=>{
     observer.next(data)

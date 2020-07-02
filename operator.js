@@ -1,5 +1,7 @@
 const Rx = require('rxjs/Rx')
 
+// operator is a function which creates a new Observable based on the current one.
+// pure operation: the previous Observable stays unmodified
 function map(observable, fn){
     const output = Rx.Observable.create(observer=>{
         observable.subscribe({

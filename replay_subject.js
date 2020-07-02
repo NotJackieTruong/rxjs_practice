@@ -2,7 +2,7 @@ const Rx = require('rxjs/Rx')
 
 // replay subject emits all the values which are stored in buffer to observers
 // replay subject with buffer
-// const subject = new Rx.ReplaySubject(4) // buffer 3 values for new subscribers
+// const subject = new Rx.ReplaySubject(3) // buffer 3 values for new subscribers
 
 // subject.subscribe({
 //     next: (v) => console.log('observerA: ', v)

@@ -1,7 +1,7 @@
 const Rx = require('rxjs/Rx')
 
 const subject = new Rx.AsyncSubject()
-// asyncsubject only emits the last value of observable execution to observers and only execution complete.
+// asyncsubject only emits the last value of observable execution to observers and only when execution completes.
 subject.subscribe({
     next: (v)=>{console.log('observerA: ', v)}
 })
