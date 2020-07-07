@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jslinq": "^1.0.22",
+    "linq": "^3.2.2",
+    "linqjs": "^1.0.2",
     "rxjs": "^6.5.5",
     "rxjs-compat": "^6.5.5"
   }
