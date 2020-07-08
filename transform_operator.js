@@ -21,8 +21,10 @@ src.mapTo(10).subscribe({
   }
 })
 
+// scan: like array reduce
 src.scan((acc, current)=> acc + current, 0).subscribe({
   next: (data)=>{
     console.log('scan: ', data)
   }
 })
+
